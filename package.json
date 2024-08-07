@@ -1,0 +1,23 @@
+{
+  "name": "tailscale-api",
+  "version": "1.0.0",
+  "description": "Tailscale API Client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "openapi --input tailscale-api.yaml --output src",
+    "build": "rollup -c rollup.config.mjs"
+  },
+  "author": "Matt Walton",
+  "license": "ISC",
+  "dependencies": {
+    "openapi-typescript-codegen": "^0.29.0",
+    "rollup": "^4.14.0",
+    "rollup-plugin-cjs-es": "^3.0.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-esbuild": "^6.1.1"
+  },
+  "devDependencies": {
+    "typedoc": "^0.26.5"
+  }
+}
